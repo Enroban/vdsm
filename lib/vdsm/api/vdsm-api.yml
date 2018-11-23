@@ -1,3 +1,4 @@
+# 一个目录类，所有的可供调用的方法都在这个目录里面了
 types:
     AutoNumaBalancingStatus: &AutoNumaBalancingStatus
         added: '3.4'

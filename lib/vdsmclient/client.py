@@ -1,3 +1,4 @@
+# coding=utf-8
 #
 # Copyright 2016-2017 Red Hat, Inc.
 #
@@ -113,8 +114,8 @@ vdsm-client can be run from an engine host using these steps:
 Use the --host/-a option to connect to the target host:
     # vdsm-client --host example.com Host getCapabilities
 
+一个工具，本身就可以以命令行的方式调用，一般指向本机，也可以指向远程host，但是需要获得远程host的TLS证书
 """
-
 from __future__ import absolute_import
 
 import argparse

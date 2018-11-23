@@ -1,3 +1,4 @@
+# coding=utf-8
 #
 # Copyright 2016 Red Hat, Inc.
 #
@@ -106,6 +107,7 @@ failed::
     vdsm.client.ServerError: Vdsm request failed
     (code=4, message=Virtual machine already exists)
 
+vdsm实际向外暴露接口的地方
 """
 
 

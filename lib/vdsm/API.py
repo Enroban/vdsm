@@ -1,3 +1,4 @@
+# coding=utf-8
 #
 # Copyright (C) 2012 Adam Litke, IBM Corporation
 # Copyright (C) 2012-2018 Red Hat, Inc.
@@ -19,6 +20,7 @@
 # Refer to the README and COPYING files for full details of the license
 #
 # pylint: disable=R0904
+# API的所有方法都在这里面了
 
 from __future__ import absolute_import
 
