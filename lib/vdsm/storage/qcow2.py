@@ -1,3 +1,4 @@
+# coding=utf-8
 #
 # Copyright 2009-2017 Red Hat, Inc.
 #
@@ -17,6 +18,7 @@
 #
 # Refer to the README and COPYING files for full details of the license
 #
+# 好像是一个工具类
 
 from __future__ import absolute_import
 from vdsm.storage import qemuimg

@@ -1,3 +1,4 @@
+# coding=utf-8
 #
 # Copyright 2012-2017 Red Hat, Inc.
 #
@@ -17,6 +18,8 @@
 #
 # Refer to the README and COPYING files for full details of the license
 #
+
+# 创建磁盘的类了
 
 from __future__ import absolute_import
 import json
