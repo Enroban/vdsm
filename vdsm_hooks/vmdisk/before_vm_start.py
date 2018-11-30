@@ -5,12 +5,12 @@ import sys
 import hooking
 import traceback
 
-'''
+"""
 vmdisk hook:
     add additional disk image for a VM (raw or qcow2)
 syntax:
     vmdisk=/path/to/disk.img:qcow2,/other/disk.img:raw
-'''
+"""
 
 driver_types = ('raw', 'qcow2')
 
@@ -26,13 +26,13 @@ def indexToDiskName(i):
 
 
 def createDiskElement(domxml, devpath, drivertype):
-    '''
+    """
     <disk device="disk" type="file" snapshot="no">
         <source file="/net/myhost/myimage.img"/>
         <target bus="virtio" dev="vda"/>
         <driver cache="none" error_policy="stop" name="qemu" type="qcow2"/>
     </disk>
-    '''
+    """
 
     disk = domxml.createElement('disk')
     disk.setAttribute('device', 'disk')
@@ -65,6 +65,7 @@ def createDiskElement(domxml, devpath, drivertype):
     disk.appendChild(driver)
 
     return disk
+
 
 if 'vmdisk' in os.environ:
     try:

@@ -45,6 +45,7 @@ class FORMAT:
     QED = "qed"
     RAW = "raw"
     VMDK = "vmdk"
+    LUKS = "luks"
 
 _QCOW2_COMPAT_SUPPORTED = ("0.10", "1.1")
 

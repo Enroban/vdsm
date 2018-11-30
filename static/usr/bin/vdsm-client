@@ -1,4 +1,5 @@
 #!/usr/bin/python2
+# coding=utf-8
 #
 # Copyright 2016 Red Hat, Inc.
 #
@@ -18,6 +19,8 @@
 #
 # Refer to the README and COPYING files for full details of the license
 #
+# vdsm-client命令，有趣的是，这个文件没有.py作为后缀，但是因为开头指向了python运行器
+# 所以这个文件可以直接被执行
 from vdsmclient import client
 
 client.main()

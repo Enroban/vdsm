@@ -1,4 +1,5 @@
 #!/usr/bin/python2
+# coding=utf-8
 #
 # Copyright 2009-2017 Red Hat, Inc. and/or its affiliates.
 #
@@ -7,6 +8,9 @@
 # (at your option) any later version.  See the files README and
 # LICENSE_GPL_v2 which accompany this distribution.
 #
+# 程序入口位置，有趣的是，这个文件没有.py作为后缀，但是因为开头指向了python运行器
+# 所以这个文件可以直接被执行
+
 from vdsm import vdsmd
 
 vdsmd.main()

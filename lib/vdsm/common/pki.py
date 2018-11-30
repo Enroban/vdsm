@@ -1,3 +1,4 @@
+# coding=utf-8
 # Copyright 2017 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -16,6 +17,8 @@
 #
 # Refer to the README and COPYING files for full details of the license
 #
+
+# 多处都调用了这个，实际是，证书文件等
 
 from __future__ import absolute_import
 

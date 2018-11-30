@@ -4,6 +4,15 @@ hooks are NOT part of VDSM. They are extensions that -
 if found useful - are to be integrated into oVirt in
 general and into VDSM in particular.
 Do not rely on their existence here.
+翻译：钩子不是VDSM的一部分。它们是：
+
+   如果发现有用的话，将被集成到OVILT中
+
+   特别是VDSM。
+
+   不要依赖他们的存在。
+大概看了一下，这个类似乎是专门提供给用来设置用户properties的，所以，不是主要的，
+当使用了ovirt-engine的管理员用户，配置了用户特定vm属性的时候，才会启用这里
 ***********************************************************************
 
 Working with VDSM hooks

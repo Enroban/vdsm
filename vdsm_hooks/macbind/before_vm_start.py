@@ -20,7 +20,7 @@
 #
 
 
-'''
+"""
 Hook to bind a vNIC into a Bridge
 
 Syntax:
@@ -28,11 +28,9 @@ Syntax:
 
 Example:
    macbind={'00:1a:4a:60:d1:9a': 'br0', '00:1a:4a:60:c4:88': 'br1'}
-'''
+"""
 from __future__ import print_function
 
-
-_DEV_TYPE = frozenset(('bridge', 'openvswitch'))
 import ast
 import os
 import sys
@@ -41,6 +39,8 @@ import xml.dom
 from vdsm.network.ipwrapper import Link
 
 import hooking
+
+_DEV_TYPE = frozenset(('bridge', 'openvswitch'))
 
 
 def createElement(domxml, element, attribute, attributeValue):

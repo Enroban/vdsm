@@ -1,3 +1,4 @@
+# coding=utf-8
 #
 # Copyright 2009-2017 Red Hat, Inc. and/or its affiliates.
 #
@@ -255,7 +256,7 @@ def __set_cpu_affinity():
     taskset.set(os.getpid(), cpu_set, all_tasks=True)
 
 
-def main():
+def main():   # 程序核心入口位置
     try:
         __assertVdsmUser()
         __assertLogPermission()
