@@ -1,3 +1,4 @@
+# coding=utf-8
 #
 # Copyright 2009-2017 Red Hat, Inc.
 #
@@ -17,6 +18,9 @@
 #
 # Refer to the README and COPYING files for full details of the license
 #
+"""
+相当于一个连接池功能，专门用来获取libvirt的连接
+"""
 
 from __future__ import absolute_import
 import atexit

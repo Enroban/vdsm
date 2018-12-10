@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Packages names
 %global vdsm_name vdsm
 

@@ -1,3 +1,4 @@
+# coding=utf-8
 # Copyright 2017 Red Hat, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -16,6 +17,8 @@
 #
 # Refer to the README and COPYING files for full details of the license
 #
+# 命令工具，专门用来执行命令的工具
+
 from __future__ import absolute_import
 
 import distutils.spawn

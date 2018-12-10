@@ -1,3 +1,4 @@
+# coding=utf-8
 #
 # Copyright 2008-2017 Red Hat, Inc.
 #
@@ -409,6 +410,7 @@ class Vm(object):
 
         self.drive_monitor = drivemonitor.DriveMonitor(
             self, self.log, enabled=False)
+        # libvirtconnection.get获取连接
         if is_kvm(self._custom):
             self._connection = libvirtconnection.get(cif)
         else:
@@ -2644,6 +2646,7 @@ class Vm(object):
         self.log.debug("Overridden %d legacy device configurations",
                        len(disk_params))
 
+    # 找到了，核心的最关键部分，启动虚拟机，
     def _run(self):
         self.log.info("VM wrapper has started")
         if not self.recovering and \
@@ -2654,6 +2657,7 @@ class Vm(object):
             # We need to define the domain in order to save device metadata in
             # _make_devices().  It'll get redefined with the final version
             # later.
+            # domxml就是启动虚拟机所有的xml的信息所在的位置了
             domxml = libvirtxml.make_placeholder_domain_xml(self)
             dom = self._connection.defineXML(domxml)
             self._dom = virdomain.Defined(self.id, dom)

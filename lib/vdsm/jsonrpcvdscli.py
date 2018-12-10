@@ -19,7 +19,7 @@
 # Refer to the README and COPYING files for full details of the license
 #
 
-# 一个过时的类，但是很多东西
+# 一个过时的，但是很多东西
 
 from __future__ import absolute_import
 

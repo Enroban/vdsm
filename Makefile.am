@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 #
 # Copyright 2008-2016 Red Hat, Inc.
 #
